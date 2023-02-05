@@ -1,63 +1,73 @@
+//Exercise 2 : Intermediate Data Type
+/*
+ * @author: N'goran Kouadio Jean Cyrille
+ * @description: Write a Java program that implements the Class diagram given below:
+ * Date : 29/01/2023
+ */
 package exercice2;
 
 public class Exercise2 {
 
 	 public static void main(String[] args) {
 	        
-	        // Déclarez et initialisez les variables
-	        int age = 25;
-	        double weight = 70.5;
-	        char gender = 'M';
-	        boolean isStudent = false;
+	        /* 1 Create a program that declares several variables of different data types, 
+		 	including at least one variable of each of the following types: int, double, char, and boolean
+		 	*/
+		 
+		 	//2 Assign values to each of the variables.
+	        boolean IsTaller = true;
+	        double price =450.9;
 	        String name = "Lordwin james";
+	        char Sex = 'F';
+	        boolean isStudent = false;
 	        
-	        // Afficher les valeurs des variables
-	        System.out.println("Age: " + age);
-	        System.out.println("Weight: " + weight);
-	        System.out.println("Gender: " + gender);
-	        System.out.println("IsStudent: " + isStudent);
+	        
+	        // 3 Print the value of each variable to the console using the appropriate method
+
 	        System.out.println("Name: " + name);
+	        System.out.println("Taller: " + IsTaller);
+	        System.out.println("Price: " + price);
+	        System.out.println("Sex: " + Sex);
+	        System.out.println("IsStudent: " + isStudent);
 	        
-	        // Modifiez les valeurs des variables
-	        age = 27;
-	        weight = 75;
-	        gender = 'M';
+	        // 4 Modify the values of the variables and print the new values to the console
+	        IsTaller = false;
+	        price = 255;
+	        Sex = 'M';
 	        isStudent = false;
-	        name = "Lordwin James";
-	        
-	        // Imprimez les nouvelles valeurs des variables
-	        System.out.println("\nNew Values:");
-	        System.out.println("Age: " + age);
-	        System.out.println("Weight: " + weight);
-	        System.out.println("Gender: " + gender);
-	        System.out.println("IsStudent: " + isStudent);
+	        name = "ST patrick";
+	        // Print
 	        System.out.println("Name: " + name);
+	        System.out.println("Taller: " + IsTaller);
+	        System.out.println("Price: " + price);
+	        System.out.println("Sex: " + Sex);
+	        System.out.println("IsStudent: " + isStudent);
 	    
-	        // Conversion de type
-	        int weightInKg = (int) (weight / 2.2);
-	        System.out.println("\nWeight in kilograms: " + weightInKg + " kg");
+	        // 5 casting operation
+	        int priceLess = (int) (price / 1.2);
+	        System.out.println("\n The price of iphone: " + priceLess + " kg");
 	    
-	        // Opération mathématique
-	        double sum = weight + age;
+	        //6 Use at least one mathematical operation
+	        double sum = price + price;
 	        System.out.println("\nSum of weight and age: " + sum);
 	    
-	        // Opérateur de comparaison
-	        if (age > 20) {
+	        //7 Use at least one comparison operato
+	        if (price > 20) {
 	            System.out.println("\nAge is greater than 20");
 	        }else {
 	            System.out.println("\nAge is less than or equal to 20");
 	        }
 	    
-	        // Instruction de flux de contrôle
-	        switch (gender) {
-	        case 'M':
-	            System.out.println("\nGender is Male");
+	        // 8 Use at least one control flow statement
+	        switch (priceLess) {
+	        case 200 :
+	            System.out.println("\n Too expensive");
 	            break;
-	        case 'F':
-	            System.out.println("\nGender is Female");
+	        case 300:
+	            System.out.println("\n Not bad");
 	            break;
 	        default:
-	            System.out.println("\nInvalid gender");
+	            System.out.println("\n out of range");
 	            break;
 	        }
 	    }
